@@ -28,6 +28,7 @@
     height: 65px;
     margin-top: 20px;
     margin-left: 20px;
+    z-index: 0;
   }
   .top {
     width: 100%;
@@ -40,7 +41,7 @@
     background-color: white;
     margin-top: 20%;
   }
-  .input:checked .top {
+  input:checked  + .burger :first-child {
     margin-top: 20px;
     transform: rotate(45deg);
     transition: 0.5s;
@@ -51,16 +52,16 @@
     background-color: white;
     margin-top: 20%;
   }
-  .input:checked .bottom {
+  input:checked + .burger :last-child{
     margin-top: -13px;
     transform: rotate(-45deg);
     transition: 0.5s;
   }
-  .input:checked .middle {
+  input:checked + .burger :nth-child(2){
     display: none;
     transition: 0.5s;
   }
-  input:checked + .inner-block{
+  input:checked + .burger + .inner-block{
     transform: translateX(20%);
     opacity: 1;
   }
@@ -70,27 +71,39 @@
   }
   input {
     position: absolute;
-    bottom: 69%;
+    bottom: 70%;
     width: 3%;
     height: 50%;
     opacity: 0;
+    z-index: 1;
     margin-left: 0.8%;
     margin-bottom: 0.5%;
+  }
+  .name1:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    transition: 0.2s;
+    width: 75%;
 
   }
-  .burger:hover .top {
-    margin-top: 20px;
-    transform: rotate(45deg);
-    transition: 0.5s;
+  .name1 {
+    width: 50%;
   }
-  
-  .burger:hover .bottom {
-    margin-top: -13px;
-    transform: rotate(-45deg);
-    transition: 0.5s;
+  .name2:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    transition: 0.2s;
+    width: 75%
   }
-  .burger:hover .middle {
-    display: none;
-    transition: 0.5s;
+  .name2 {
+    width: 50%;
   }
-   
+  .name3:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    transition: 0.2s;
+    width: 75%;
+  }
+  .name3 {
+    width: 50%;
+  }
