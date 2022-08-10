@@ -44,7 +44,7 @@
   input:checked  + .burger :first-child {
     margin-top: 20px;
     transform: rotate(45deg);
-    transition: 0.5s;
+    transition: 0.3s;
   }
   .bottom {
     width: 100%;
@@ -55,11 +55,11 @@
   input:checked + .burger :last-child{
     margin-top: -13px;
     transform: rotate(-45deg);
-    transition: 0.5s;
+    transition: 0.3s;
   }
   input:checked + .burger :nth-child(2){
     display: none;
-    transition: 0.5s;
+    transition: 0.3s;
   }
   input:checked + .burger + .inner-block{
     transform: translateX(20%);
@@ -78,6 +78,7 @@
     z-index: 1;
     margin-left: 0.8%;
     margin-bottom: 0.5%;
+    cursor: pointer;
   }
   .name1:hover {
     border-top: 3px solid white;
@@ -88,6 +89,7 @@
   }
   .name1 {
     width: 50%;
+    cursor: pointer;
   }
   .name2:hover {
     border-top: 3px solid white;
@@ -97,6 +99,7 @@
   }
   .name2 {
     width: 50%;
+    cursor: pointer;
   }
   .name3:hover {
     border-top: 3px solid white;
@@ -106,4 +109,5 @@
   }
   .name3 {
     width: 50%;
+    cursor: pointer;
   }
